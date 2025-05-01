@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { BlockCard } from "@/components/ui/block-card"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -29,10 +30,10 @@ export default function Page() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-zinc-600 text-sm font-medium hover:text-zinc-800">
+            <a href="#" className="text-zinc-500 text-sm font-medium hover:text-zinc-800">
               Favorites
             </a>
-            <a href="#" className="text-zinc-600 text-sm font-medium hover:text-zinc-800">
+            <a href="#" className="text-zinc-500 text-sm font-medium hover:text-zinc-800">
               Submit a resource
             </a>
           </nav>
@@ -98,22 +99,22 @@ export default function Page() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Block 1 */}
-            <BlockCard title="Blocks Built With Shadcn & Tailwind" label="HERO32" />
+            <BlockCard title="Blocks Built With Shadcn & Tailwind" label="SAVE" />
 
             {/* Block 2 */}
-            <BlockCard title="Build faster with Shadcnblocks" label="HERO8" />
+            <BlockCard title="Build faster with Shadcnblocks" label="Save" />
 
             {/* Block 3 */}
-            <BlockCard title="A Collection of Components Built With Shadcn & Tailwind" label="HERO1" />
+            <BlockCard title="A Collection of Components Built With Shadcn & Tailwind" label="Save" />
 
             {/* Block 4 */}
-            <BlockCard title="Build your next project with Blocks" label="HERO12" />
+            <BlockCard title="Build your next project with Blocks" label="Save" />
 
             {/* Block 5 */}
-            <BlockCard title="This is a heading for your new project" label="HERO18" />
+            <BlockCard title="This is a heading for your new project" label="Save" />
 
             {/* Block 6 */}
-            <BlockCard title="Why Work With Us?" label="FEATURE43" />
+            <BlockCard title="Why Work With Us?" label="Save" />
 
             {/* Block 7 */}
             <BlockCard title="Welcome to Our Website" label="HERO34" />
@@ -132,26 +133,4 @@ export default function Page() {
   )
 }
 
-// Component for block cards
-function BlockCard({ title, label }: { title: string; label: string }) {
-  return (
-    <Card className="overflow-hidden border border-gray-200 rounded-lg">
-      <div className="aspect-[4/3] bg-gray-100 relative flex items-center justify-center">
-        <div className="text-center p-6">
-          <div className="mb-4 flex justify-center">
-            <Image src="/placeholder.svg?height=40&width=40" alt="Block icon" width={40} height={40} />
-          </div>
-          <h3 className="font-semibold text-lg mb-2">{title}</h3>
-          <div className="flex justify-center mt-4">
-            <Button variant="outline" size="sm" className="text-xs">
-              View Block
-            </Button>
-          </div>
-        </div>
-        <div className="absolute bottom-2 right-2 bg-white px-2 py-0.5 rounded text-xs font-medium text-gray-600">
-          {label}
-        </div>
-      </div>
-    </Card>
-  )
-}
+

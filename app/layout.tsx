@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Space_Mono } from "next/font/google"
 import { Instrument_Serif } from "next/font/google"
 import "./globals.css"
 
@@ -9,8 +9,9 @@ const geistSans = Geist({
   variable: "--font-sans",
 })
 
-const geistMono = Geist_Mono({
+const spaceMono = Space_Mono({
   subsets: ["latin"],
+  weight: ["400"],
   variable: "--font-mono",
 })
 
@@ -33,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} font-sans antialiased`}>
+      <body className={`${geistSans.variable} ${spaceMono.variable} ${instrumentSerif.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

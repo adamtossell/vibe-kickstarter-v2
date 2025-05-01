@@ -14,7 +14,7 @@ const buttonVariants = cva(
         white:
           "bg-gradient-to-t from-zinc-50 to-white border border-zinc-200 text-secondary-foreground hover:from-white hover:to-zinc-50 hover:border-zinc-300 transition-colors duration-200",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-zinc-100 bg-transparent hover:bg-zinc-50 hover:border-zinc-200 hover:text-zinc-900 transition-colors transition-opacity duration-200 shadow-sm",
+        outline: "border border-zinc-100 bg-white hover:bg-zinc-50 hover:border-zinc-200 hover:text-zinc-900 transition-colors transition-opacity duration-200 shadow-sm",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
