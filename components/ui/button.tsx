@@ -14,12 +14,12 @@ const buttonVariants = cva(
         white:
           "bg-gradient-to-t from-zinc-50 to-white border border-zinc-200 text-secondary-foreground hover:from-white hover:to-zinc-50 hover:border-zinc-300 transition-colors duration-200",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-zinc-200 bg-transparent hover:bg-zinc-100 hover:text-zinc-900",
+        outline: "border border-zinc-100 bg-transparent hover:bg-zinc-50 hover:border-zinc-200 hover:text-zinc-900 transition-colors transition-opacity duration-200 shadow-sm",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         gradient:
-          "bg-gradient-to-t from-fuchsia-300 to-fuchsia-400 text-white border-fuchsia-500 hover:from-fuchsia-400 hover:to-fuchsia-300 transition-colors duration-200",
+          "bg-gradient-to-t from-fuchsia-400 to-fuchsia-300 text-white border-fuchsia-500 hover:from-fuchsia-300 hover:to-fuchsia-400 transition-colors transition-opacity duration-200 shadow-sm",
         opacity:
           "bg-gradient-to-t from-white/0 to-white/15 text-white border border-white border-opacity-40 hover:from-white/15 hover:to-white/0 hover:border-opacity-60 transition-colors transition-opacity duration-200 shadow-sm",
       },

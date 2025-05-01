@@ -22,30 +22,30 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <header className="border-b border-gray-100">
-        <div className="max-w-5xl container mx-auto px-4 py-4 flex items-center justify-between">
+      <header className="p-4">
+        <div className="max-w-5xl mx-auto bg-gradient-to-t from-white to-zinc-50 border border-zinc-100 rounded-2xl shadow-sm p-4 flex items-center justify-between">
           <div>
             <span className="font-semibold text-md">Vibe Kickstarter</span>
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-sm font-medium">
+            <a href="#" className="text-zinc-600 text-sm font-medium hover:text-zinc-800">
               Favorites
             </a>
-            <a href="#" className="text-sm font-medium">
+            <a href="#" className="text-zinc-600 text-sm font-medium hover:text-zinc-800">
               Submit a resource
             </a>
           </nav>
 
           <div className="flex items-center space-x-3">
-            <Button variant="ghost">Login</Button>
-            <Button variant="default">Sign up</Button>
+            <Button variant="outline">Login</Button>
+            <Button variant="gradient">Sign up</Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12 md:py-16">
+      <section className="container mx-auto px-4 py-20">
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <h1 className="text-2xl md:text-5xl font-medium tracking-tighter text-gray-900 font-sans">
