@@ -22,8 +22,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Shadcnblocks - 638 extra blocks for Shadcn UI",
-  description: "Copy/paste our incredible components built with shadcn/ui, Tailwind & React.",
+  title: "Vibe kickstarter",
+  description: "Resources to use whilst building projects with AI.",
     generator: 'v0.dev'
 }
 

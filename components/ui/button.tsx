@@ -17,11 +17,12 @@ const buttonVariants = cva(
         outline: "border border-zinc-100 bg-white hover:bg-zinc-50 hover:border-zinc-200 hover:text-zinc-900 transition-colors transition-opacity duration-200 shadow-sm",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghostInverse: "text-fuchsia-100 hover:bg-white/20 hover:text-white",
         link: "text-primary underline-offset-4 hover:underline",
         gradient:
           "bg-gradient-to-t from-fuchsia-400 to-fuchsia-300 text-white border-fuchsia-500 hover:from-fuchsia-300 hover:to-fuchsia-400 transition-colors transition-opacity duration-200 shadow-sm",
         opacity:
-          "bg-gradient-to-t from-white/0 to-white/15 text-white border border-white border-opacity-40 hover:from-white/15 hover:to-white/0 hover:border-opacity-60 transition-colors transition-opacity duration-200 shadow-sm",
+          "bg-gradient-to-t from-white/0 to-white/20 text-white border border-white border-opacity-40 hover:from-white/20 hover:to-white/0 hover:border-opacity-60 transition-colors transition-opacity duration-200 shadow-sm",
       },
       size: {
         default: "h-8 px-3 py-2",

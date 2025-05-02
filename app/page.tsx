@@ -24,44 +24,39 @@ export default function Page() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <header className="p-4">
-        <div className="max-w-5xl mx-auto bg-gradient-to-t from-white to-zinc-50 border border-zinc-100 rounded-2xl shadow-sm p-4 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto bg-zinc-50 border border-zinc-100 rounded-2xl shadow-sm p-4 flex items-center justify-between">
           <div>
-            <span className="font-semibold text-md">Vibe Kickstarter</span>
+            <span className="font-semibold text-md text-zinc-950">Vibe Kickstarter</span>
           </div>
 
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="text-zinc-500 text-sm font-medium hover:text-zinc-800">
-              Favorites
-            </a>
-            <a href="#" className="text-zinc-500 text-sm font-medium hover:text-zinc-800">
-              Submit a resource
-            </a>
-          </nav>
 
           <div className="flex items-center space-x-3">
-            <Button variant="outline">Login</Button>
-            <Button variant="gradient">Sign up</Button>
+            <Button variant="ghost">Login</Button>
+            <Button variant="outline">Sign up</Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8 items-center text-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-2xl md:text-5xl font-medium tracking-tighter text-gray-900 font-sans">
+            <h1 className="text-2xl md:text-5xl font-medium tracking-tighter text-gray-950 font-sans">
               Kick start your Vibe Coding projects
             </h1>
-            <p className="text-gray-500 text-md">
+            <p className="text-gray-400 text-md">
               A collection of handy resources to use whilst building projects with AI.
             </p>
           </div>
 
-          <div className="bg-gradient-to-t from-fuchsia-300 to-fuchsia-400 border border-fuchsia-400 rounded-2xl shadow-md p-4 flex items-center justify-between mb-6">
-            <p className="text-lg text-white font-medium text-shadow-lg">
+          <div className="flex flex-col gap-4 bg-gradient-to-t from-fuchsia-300 to-fuchsia-400 border border-fuchsia-400 rounded-2xl shadow-md p-6 items-stretch justify-between">
+            <p className="text-sm font-mono text-fuchsia-100 font-bold tracking-tight">
               Have a resource that you think others will find useful?
             </p>
-            <Button variant="opacity">Submit a kickstarter resource</Button>
+            <div className="flex items-center gap-2">
+              <Input type="text" placeholder="Enter URL" className="max-w-sm focus:ring-fuchsia-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-fuchsia-200"/>
+              <Button variant="opacity" className="w-fit">Submit</Button>
+            </div>
           </div>
         </div>
       </section>
@@ -97,40 +92,95 @@ export default function Page() {
               </Select>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Block 1 */}
-            <BlockCard title="Blocks Built With Shadcn & Tailwind" label="SAVE" />
+            <BlockCard 
+              title="Shadcn registry MCP" 
+              description={`https://x.com/shadcn/status/1917597228513853603`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177583/shadcn-ui_logo_yvwago.png"
+            />
 
             {/* Block 2 */}
-            <BlockCard title="Build faster with Shadcnblocks" label="Save" />
+            <BlockCard 
+              title="Firebase studio" 
+              description={`npx shadcn@latest add https://supabase.com/ui/r/supabase-client-nextjs.json
+pnpm dlx shadcn@latest add https://supabase.com/ui/r/supabase-client-nextjs.json
+yarn dlx shadcn@latest add https://supabase.com/ui/r/supabase-client-nextjs.json`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177451/firebase_studio_q63dwg.png"
+            />
 
             {/* Block 3 */}
-            <BlockCard title="A Collection of Components Built With Shadcn & Tailwind" label="Save" />
+            <BlockCard 
+              title="Supabase client libraries" 
+              description={`npx create-supabase-app my-app
+pnpm create supabase-app my-app
+yarn create supabase-app my-app`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
             {/* Block 4 */}
-            <BlockCard title="Build your next project with Blocks" label="Save" />
+            <BlockCard 
+              title="Supabase password based auth" 
+              description={`supabase.auth.signUp({ email, password })
+supabase.auth.signIn({ email, password })
+supabase.auth.signOut()`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
             {/* Block 5 */}
-            <BlockCard title="This is a heading for your new project" label="Save" />
+            <BlockCard 
+              title="Supabase dropzone (file upload)" 
+              description={`const { data, error } = await supabase.storage
+  .from('bucket')
+  .upload('file.pdf', file)`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
             {/* Block 6 */}
-            <BlockCard title="Why Work With Us?" label="Save" />
+            <BlockCard 
+              title="Supabase realtime chat" 
+              description={`supabase.channel('room1')
+  .on('INSERT', { event: 'message' }, handler)
+  .subscribe()`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
             {/* Block 7 */}
-            <BlockCard title="Welcome to Our Website" label="HERO34" />
+            <BlockCard 
+              title="Next.js starter project" 
+              description={`npx create-next-app my-app
+pnpm create next-app my-app
+yarn create next-app my-app`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746178518/next_js_logo_d0gocu.svg"
+            />
 
             {/* Block 8 */}
-            <BlockCard title="A system crafted for team success and growth" label="HERO25" />
+            <BlockCard 
+              title="Supabase realtime cursor" 
+              description={`supabase.channel('room1')
+  .on('INSERT', { event: 'message' }, handler)
+  .subscribe()`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
             {/* Block 9 */}
-            <BlockCard title="Develop, launch, and grow your service with our platform" label="HERO24" />
+            <BlockCard 
+              title="Supabase current user avatar" 
+              description={`const { data, error } = await supabase.storage
+  .from('avatars')
+  .download('avatar.jpg')`} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177489/supabase-logo-icon_h56xvs.png"
+            />
 
-            {/* More blocks can be added as needed */}
+            {/* Block 10 */}
+            <BlockCard 
+              title="Shadcn blocks" 
+              description={'https://www.shadcnblocks.com/'} 
+              imageUrl="https://res.cloudinary.com/dcnfwqsi9/image/upload/v1746177675/shadcn-blocks_logo_osolzn.svg"
+            />
           </div>
         </div>
       </section>
     </div>
   )
 }
-
-
