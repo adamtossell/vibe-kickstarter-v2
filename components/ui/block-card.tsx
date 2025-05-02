@@ -10,7 +10,7 @@ interface BlockCardProps {
 
 export function BlockCard({ title, description, imageUrl }: BlockCardProps) {
   return (
-    <Card className="overflow-hidden border border-zinc-100 rounded-lg shadow-sm">
+    <Card className="overflow-hidden border border-zinc-100 rounded-lg shadow-md">
       <div className="aspect-[4/3] bg-zinc-50 relative flex flex-col justify-start gap-5 p-5 h-full font-mono">
         <div className="flex justify-between">
           <Image src={imageUrl} alt="Block icon" width={20} height={20} />

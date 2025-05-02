@@ -74,6 +74,12 @@ const config = {
           to: { height: "0" },
         },
       },
+      boxShadow: {
+        xs: "0 1px 2px -1px rgba(24, 24, 27, 0.05)",
+        sm: "0 1px 2px -1px rgb(24, 24, 27, 0.05), 0 2px 4px -1px rgba(24, 24, 27, 0.05)",
+        md: "0 4px 16px -2px rgba(24, 24, 27, 0.05), 0 2px 4px -1px rgba(24, 24, 27, 0.08)",
+        lg: "0 12px 32px -4px rgba(24, 24, 27, 0.05), 0 4px 8px -2px rgba(24, 24, 27, 0.08)"
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

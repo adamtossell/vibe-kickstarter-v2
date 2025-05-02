@@ -24,7 +24,7 @@ export default function Page() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <header className="p-4">
-        <div className="max-w-5xl mx-auto bg-zinc-50 border border-zinc-100 rounded-2xl shadow-sm p-4 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto bg-zinc-50 border border-zinc-100 rounded-2xl shadow-md p-4 flex items-center justify-between">
           <div>
             <span className="font-semibold text-md text-zinc-950">Vibe Kickstarter</span>
           </div>
@@ -49,7 +49,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 bg-gradient-to-t from-fuchsia-300 to-fuchsia-400 border border-fuchsia-400 rounded-2xl shadow-md p-6 items-stretch justify-between">
+          <div className="flex flex-col gap-4 bg-gradient-to-t from-fuchsia-300 to-fuchsia-400 border border-fuchsia-400 rounded-2xl shadow-lg p-6 items-stretch justify-between">
             <p className="text-sm font-mono text-fuchsia-100 font-bold tracking-tight">
               Have a resource that you think others will find useful?
             </p>
