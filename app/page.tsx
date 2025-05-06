@@ -24,7 +24,7 @@ export default function Page() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <header className="p-4">
-        <div className="max-w-5xl mx-auto bg-zinc-50 border border-zinc-100 rounded-2xl shadow-md p-4 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto bg-gradient-to-t from-zinc-50 to-zinc-100 border border-zinc-100 rounded-2xl shadow-sm p-4 flex items-center justify-between">
           <div>
             <span className="font-semibold text-md text-zinc-950">Vibe Kickstarter</span>
           </div>
